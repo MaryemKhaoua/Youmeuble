@@ -1,0 +1,247 @@
+* {
+    font-family: 'Lato', sans-serif;
+    --redColor:hwb(0 5% 29%);
+    --whiteColor:#f8f9fa;
+}
+body {
+	background: var(--whiteColor);
+}
+.nav-item{
+    margin-left: 20px;
+}
+.section-padding {
+	padding: 100px 0;
+}
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+    font-weight: bold;
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background:rgba(0, 0, 0, 0.15);
+    background-size: cover;
+    background-repeat: no-repeat;
+	z-index: 1;
+}
+.navbar .getstarted {
+	margin-left: 30px;
+	border-radius: 4px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	line-height: 2.3;
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.nav-brand-two{
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    border: 5px solid var(--whiteColor);
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+   border-bottom: 5px solid var(--redColor);
+   color: var(--redColor);
+   transition: 0.4s;
+}
+
+
+
+.carousel-item .w-100 {
+	height: 100vh;
+}
+
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+.products .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.team .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.icon-media{
+   font-size: 25px;
+   margin-right: 5px;
+   color: black;
+}
+.icon-media:hover{
+	color:var(--redColor) ;
+}
+/* footer */
+footer{
+	display: flex;
+}
+/* --------- FAQ page ---------- */
+
+.faq {
+    border-bottom: 3px #000 solid;
+    cursor: pointer;
+	margin-top: 20px;
+}
+.question i{
+	font-size: 1.7rem;
+}
+.reponse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s; 
+}
+.reponse p{
+	font-size: 1.5rem;
+	color: rgb(106, 106, 106);
+	margin-top: 20px;
+}
+
+.faq.active .reponse {
+    max-height: 300px;
+}
+
+/* popUp */
+.popUp-section{
+	box-shadow: 6px 0px 0px 550px #efefef;
+	position: absolute; 
+	top: 25%; 
+	position: fixed;
+	left: 32%; 
+	width: 40%;
+	z-index: 1000;
+	display: flex; 
+	flex-direction:
+	column; opacity: 100%;
+	display: none;
+}
+.close-btn{
+	cursor: pointer; 
+	align-self: flex-end;
+	color: var(--whiteColor);
+	background-color: #000;
+	border-radius: 90%;
+	transition: 0.3s;
+}
+.popUp-section.active{
+	display: flex;
+	transition:0.3s;
+}
+
+
+
+
+/* end  popup */
+/* ---------- end FAQ ------------- */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.img-area img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	.about-text {
+		padding-top: 50px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.footer-img{
+		display: none;
+	}
+	footer{
+		display: block;
+		text-align: center;
+	}
+	.carousel{
+		display: none;
+	}
+
+	/* fa1 responsive */
+	.question h3{
+		font-size: 20px;
+	}
+	.question i{
+		font-size: 1.3rem;
+	}
+	.reponse p{
+		font-size:15px;
+	}
+	
+}
+
+/* ____________________________________thes parte it's for desplay page*/ 
+
+.product_img{
+  width: 100%;
+}
+.Produits_connexes_img{
+	height:60%;
+	display: flex;
+}
+.margin-left-p{
+	margin-left:60%;
+}
+
